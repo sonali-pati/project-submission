@@ -1,0 +1,611 @@
+    
+   /* fonts import */
+
+   @import url('https://fonts.googleapis.com/css2?family=Poppins:wght@100;200&display=swap');
+
+  
+
+*{
+    margin: 0px;
+    padding: 0px;
+    box-sizing: border-box;
+}
+    /* my fonts */
+    @font-face{
+      font-family:kaushan;
+         src: url(../media/fonts/kaushan_script.ttf);
+     }
+  
+
+    
+  /* global css */
+  .container{
+    width:80%;
+    height: auto;
+    /* background-color: red; */
+    display: flex;
+    /* justify-content: space-between; */
+ }
+
+ .section_title{
+  font-family:poppins;
+  font-size: 40px;
+  font-weight:200px;
+ }
+
+
+  /* css for header */
+ .header {
+    width: 100%;
+    /* height: 80px; */
+    /* background-color:lightgray; */
+    display: flex;
+    justify-content: center;
+    position: fixed;
+ }
+  .header_container{
+    justify-content: center;
+  }
+ .logo{
+    width: 10%;
+    /* background-color: yellow; */
+    height: 80px;
+    font-family: kaushan;
+    font-size: 20px;
+    display: flex;
+    justify-content: center;
+    line-height: 80px;
+    color: white;
+    text-transform: uppercase;
+ }
+ .nav{
+    width:50%;
+    height: 80px;
+    /* background-color: blue; */
+ }
+.navlink{
+    display: flex;
+     list-style-type: none;
+}
+.navlinks{
+    width: calc(100%/7);
+    text-align: center;
+    color: white;
+    line-height: 80px;
+    padding: 0px 10px;
+    /* font-family:poppins; */
+  
+    
+}
+.navlinks:hover{
+    color: orange;
+    cursor: pointer;
+}
+.logo:hover{
+    color: orange;
+    cursor: pointer;
+}
+    /* css folr banner */
+.banner{
+    width: 100%;
+    height: 85vh;
+    background-color: rgb(0,0,0,0.2);
+    background-image: url(https://cdn.pixabay.com/photo/2017/12/16/22/22/bora-bora-3023437_960_720.jpg);
+    background-size: cover;
+    /* background-position: center; */
+    background-position: bottom;
+    background-repeat: no-repeat;
+    background-blend-mode: saturation;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}   
+  .banner_containt{
+    width: 40%;
+    height: 200px;
+    /* background-color:black; */
+    margin-top: 400px;
+
+  }
+ .search{
+    width:100% ;
+    height: 50px;
+    /* background-color: red; */
+    display: flex;
+    border-radius: 10px;
+ }
+ .search_input{
+  width: 90%;
+  height: 50px;
+  outline: none;
+  text-indent: 20px;
+  font-size: 15px;
+  /* border-radius: 10px; */
+  border: none;
+  border-top-left-radius: 10px;
+  border-bottom-left-radius: 10px;
+ }
+ .search_icon{
+  height: 50px;
+  width: 10%;
+  /* background-color: yellow; */
+  background-color: white;
+  text-align: center;
+  line-height: 50px;
+  font-size: 25px;
+  color: gray;
+  /* border: none; */
+  /* border-radius: 10px; */
+  border-top-right-radius: 10px;
+  border-bottom-right-radius: 10px;
+ }
+     /* css for places */
+  .places{
+    width: 100%;
+    padding-top: 50px;
+    padding-bottom: 50px;
+    /* background-color: gray; */
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    row-gap: 30px;
+    /* column-gap: 4%; */
+
+  }
+  /* .section_title{
+    font-family:'Segoe UI';
+    font-weight: 100;
+    font-size: 40px;
+  } */
+    .places_container{
+      column-gap:calc(4%/3);
+      /* yachyane eka place chya sidela gyap tayar hoto */
+    }
+
+  .place{
+    width: 24%;
+    height: 450px;
+    /* background-color: yellow; */
+    background-size: cover;
+    display: flex;
+    background-size: cover;
+    overflow: hidden;
+    border-radius: 5px;
+  }
+   .place:nth-child(1){
+    background-image: url(../media/images/places_1.webp);
+   }
+   .place:nth-child(2){
+    background-image: url(../media/images/places_2.jpg);
+   }
+   .place:nth-child(3){
+    background-image: url(../media/images/places_3.png);
+
+   }
+   .place:nth-child(4){
+    background-image: url(../media/images/places_4.jpg);
+   }
+
+  .place_detail{
+    width: 100%;
+    /* height: 50px; */
+    height: 450px;
+    background-color: rgba(0, 0, 0, 0.5);
+    position: relative;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    /* justify-content: center;he parat dile */
+    justify-content: center;
+    row-gap: 150px;
+    margin-top:390px;
+    cursor: pointer;
+    transition: 0.3s;
+  }
+/* .place_detail:hover{
+  margin-top: 0px;
+} */
+ /* it means hover on place_detail andwork on itself */
+
+   /* now this bellow is hover on place and work on .place_detail */
+   .place:hover > .place_detail{
+     margin-top: 0px;
+   }
+
+  .card_title{
+    font-size: 20px;
+    font-family:poppins;
+    color: white;
+    position: absolute;
+    top:0 ;
+    margin-top:20px;
+  }
+  .card_btn{
+   padding: 12px 40px;
+   border: 1px solid white;
+   background-color: transparent;
+   color: white;
+   text-transform: uppercase;
+   font-family: poppins;
+   border-radius: 10px;
+   font-weight: bold;
+  }
+     /* css for packages */
+     .packages{
+      width: 100%;
+      padding-top: 50px;
+      padding-bottom: 50px;
+      /* background-color: gray; */
+      background-color:rgba(0, 0, 0, 0.1);
+      /* background-color: #f4f6ed; */
+      display: flex;
+      flex-direction: column;
+      align-items: center;
+      row-gap: 30px;
+     }
+      .packages_container{
+        /* background-color: red; */
+        column-gap: calc(5%/4);
+      }
+      .package{
+        width:19%;
+        height:500px;
+        /* background-color: yellow; */
+       
+        font-family: poppins;
+        font-weight: bold;
+        border-radius: 5px;
+        overflow: hidden;
+        cursor: pointer;
+      }
+      .package:hover .package_img > img{
+        transform: scale(1.2);
+      }
+      .package_img > img{
+        width:100% ;
+        transition: .3s;
+      }
+      .package_img{
+        width: 100%;
+        height:350px;
+        /* background-color: blue; */
+        overflow: hidden;
+      }
+      .package_detail{
+        display: flex;
+        flex-direction: column;
+        align-items: flex-start;
+        row-gap: 10px;
+      }
+      .package_img > img{
+        width:100%;
+        height: 100%;
+      }
+      /* .price{
+        font-weight: bold;
+      } */
+      .rating{
+        width: 113px;
+        height: 20px;
+        /* height:25px; */
+        /* width: 125px; */
+        /* width: auto; */
+        /* background-color: red; */
+        position: relative;
+      }
+      .gray_star{
+        /* height: 25px; */
+        /* width: 125px; */
+        /* width: auto; */
+        position: absolute;
+        width: 100%;
+        height: 20px;
+        /* background-color: green; */
+        font-size: 20px;
+        display: flex;
+        color: gray;
+      }
+      .yellow_star{
+        /* width: 50px; */
+        /* width: 100%; */
+        height: 20px;
+        width: 70%;
+        position: absolute;
+        /* background-color: pink; */
+        /* background-color: blue; */
+        font-size: 20px;
+        display: flex;
+        color:gold;
+        overflow: hidden;
+      }
+           /*css for destination */
+      .destinations{
+        width: 100%;
+        height: 700px;
+        background: red;
+        /* background-size: cover; */
+        overflow: hidden;
+        position: relative;
+      }
+      .vid{
+        width: 100%;
+        position: absolute;
+      }
+      /* what should we do so that over_lay comes on top of video
+      keep heigh exactly same as paren that is 700px */
+      .video_overlay{
+       height: 700px;
+       width: 100%;
+       background-color: rgb(0,0,0,0.4);
+       position: absolute;
+       display: flex;
+       justify-content: center;
+       align-items: center;
+       color: white;
+       font-family: poppins;
+       font-size: 100px;
+       font-weight: bold;
+      }
+       /* css for gallery */
+       .gallery{
+        height:900px;
+        width:100%;
+        background-color: red;
+        display: flex;
+        flex-wrap: wrap;
+       }
+       .gall{
+        width: 20%;
+        height: 450px;
+        background-color: yellow;
+        background-size: cover;
+        
+       }
+       .gall:nth-child(1){
+        background-image: url('../media/images/gallery_1.jpg');
+
+       }
+       .gall:nth-child(2){
+        
+        background-image:url('../media/images/gallery_2.jpg') ;
+        }
+       .gall:nth-child(3){
+         background-image:url('../media/images/gallery_3.jpg');
+
+       }
+       .gall:nth-child(4){
+        background-image:url('../media/images/gallery_4.jpg');
+       }
+       .gall:nth-child(5){
+        background-image: url('../media/images/gallery_5.jpg');
+       }
+       .gall:nth-child(6){
+        background-image: url('../media/images/gallery_6.jpg');
+       }
+       .gall:nth-child(7){
+        background-image: url('../media/images/gallery_7.jpg');
+        
+       }
+       .gall:nth-child(8){
+        background-image: url('../media/images/gallery_8.avif');
+       }
+       .gall:nth-child(9){
+        background-image: url('../media/images/gallery_9.jpeg');
+       }
+       .gall:nth-child(10){
+        background-image: url('../media/images/gallery_10.jpeg');
+       }
+       .gall_overlay{
+        height: 450px;
+        width: 100%;
+        /* background-color: red; */
+        background-color: rgba(0, 0, 0, 0);
+        display: flex;
+        justify-content: center;
+        align-items: center;
+        overflow: hidden;
+        position: relative;
+        cursor: pointer;
+        }
+
+        .gall_overlay:hover{
+          background-color: rgba(0, 0, 0, 0.4);
+        }
+       .gall_overlay:hover .cut{
+        transform: rotate(45deg) translate(0px);
+       }
+       .gall_overlay:hover .gall_detail{
+        transform: translate(0%);
+       }
+       .cut{
+        width: 60%;
+        height: 600px;
+        background-color: white;
+        opacity: .8;
+        transform:rotate(45deg) translate(-450px);
+        position: absolute;
+        transition: .3s;
+       }
+       .gall_detail{
+        height: 200px;
+        width:100%;
+        /* background-color: yellow; */
+        position: absolute;
+        display: flex;
+        flex-direction: column;
+        justify-content: center;
+        align-items: center;
+        font-family: poppins;
+        font-size: 20px;
+        font-weight: bold;
+        row-gap: 10px;
+        transform: translate(100%);
+        transition: .3s;
+       }
+      .btn{
+        padding: 10px 30px;
+        border: 2px solid black;
+        font-family: poppins;
+        font-weight: bold;
+        color: black;
+        text-transform: uppercase;
+        cursor: pointer;
+        background-color: transparent;
+        border-radius: 5px;
+      }
+      .btn:hover{
+        background-color: #c17e04;
+        color:white;
+        border: 2px solid #c17e04;
+      }
+      .btn:active{
+        background-color: #dd981b;
+      }
+         /* css for Testimonials */
+         .testimonials{
+          padding-top:50px;
+          padding-bottom: 50px;
+          /* background-color:#f4f6ed; */
+           /* background-color:gray; */
+          display:flex;
+          flex-direction: column;
+          align-items: center;
+          row-gap: 30px;
+
+         }
+         .testimonial_container{
+
+         }
+         .user_picture{
+          height:500px;
+          width:20%;
+          /* background-color:red; */
+          /* object-fit: cover; */
+          display:flex;
+          align-items: center;
+          overflow:hidden;
+          border-radius:5px;
+          
+         }
+         .user_picture >img{
+           width:100%;
+           /* height: 100%; */
+         }
+           
+
+         .testimonial{
+          height:500px;
+          width:80%;
+          /* background-color:green; */
+          padding:50px;
+         }
+     .testimonial > p{
+      font-family:poppins;
+      /* font-size:20px; */
+      font-weight: bold;
+      display:flex;
+      flex-direction:column;
+      row-gap:20px;
+     }
+      .user_gallery{
+        height:200px;
+        width:100%;
+        /* background-color: red; */
+        overflow-x: scroll;
+        overflow-y: hidden;
+
+      }
+      .user_gallery::-webkit-scrollbar{
+        height:10px;
+      }
+      .user_gallery::-webkit-scrollbar-thumb{
+        background-color: gray;
+      }
+      /* .user_gallery::-webkit-scrollbar-track{
+        background-color: red;
+      } */
+          /* he varache track che scrolbar color changala nahi disat to comment kela */
+      .user_slider{
+        height: 200px;
+        width:150%;
+        /* display: flex; */
+       
+      }
+      .user_slider > img{
+        height:200px;
+        /* width: 300px; */
+        border-radius: 5px;
+        /* display: inline-block; */
+      }
+         /* css for blogs */
+      .blogs{
+        width: 100%;
+        padding-top:50px;
+        padding-bottom: 50px;
+        /* background-color: #f4f6ed; */
+        display:flex;
+        flex-direction:column;
+        align-items: center;
+        row-gap: 20px;
+        background-color: #f1f1f1;
+      }
+      .blog_container{
+        column-gap: calc(4%/3);
+      }
+      .blog{
+        /* height: 450px; */
+        width:24%;
+        /* background-color:yellow ; */
+        color: pointer;
+        box-shadow: 0 0 1px gray;
+        border-radius: 5px;
+        overflow: hidden;
+        /* display: flex;
+        flex-direction: column;
+        align-items: center;
+        justify-content: center; */
+
+      }
+      .blog_img{
+        width:100%;
+        height: 200px;
+        /* background-color: blue; */
+        overflow: hidden;
+      }
+      .blog_img >img{
+        width:100%;
+        transition: .3s;
+      }
+      .blog:hover .blog_img > img{
+        transform: scale(1.4);
+      }
+      .blog_detail{
+        padding:15px;
+        font-family: poppins;
+        font-weight: bold;
+        display: flex;
+        flex-direction: column;
+        row-gap: 10px;
+
+      }
+      .blog_btn{
+      padding:15px 40px;
+      align-self: flex-start;
+      /* background-color: orange; */
+      background-color: #dd981b;
+      border: none;
+      color:white;
+      cursor: pointer;
+      border-radius: 5px;
+      font-family: poppins;
+      font-weight: bold;
+      transition: .3s;
+      text-transform: uppercase;
+      }
+
+      .blog_btn:hover{
+        background-color: #c17e04;
+      }
+      .blog_btn:active{
+        background-color: #dd981b;
+      }
