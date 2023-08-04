@@ -1,0 +1,54 @@
+
+
+  <!DOCTYPE html>
+  <html lang="en">
+  <head>
+    
+    <title>Animated Site Carousel</title>
+    <link rel="stylesheet" href="./index.css">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.0/css/all.min.css" integrity="sha512-iecdLmaskl7CVkqkXNQ/ZH/XLlvWZOJyj7Yy7tcenmpD1ypASozpmT/E0iPtmFIB46ZmdtAc9eNBvH0H/ZpiBw==" crossorigin="anonymous" referrerpolicy="no-referrer" />
+  </head>
+  <body>
+    <section class="carousel">
+          <div class="slider" id="slider">
+            <div class="img">0</div>
+           <div class="img">1</div>
+           <div class="img">2</div>
+           <div class="img">3</div>
+           <div class="img">4</div>
+           <div class="img">5</div>
+
+          </div>
+
+          <div class="buttons">
+            <div class="button" id="prev">
+               <i class="fa-solid fa-angle-left"></i>
+            </div>
+            <div class="button" id="next">
+               <i class="fa-solid fa-angle-right"></i>
+            </div>
+            
+          </div>
+          <div class="indicators">
+             <p class="indicator activeindicator" id="ind1" onclick="indicate(1)"></p>
+             <p class="indicator" id="ind2" onclick="indicate(2)"></p>
+             <p class="indicator" id="ind3" onclick="indicate(3)"></p>
+             <p class="indicator" id="ind4"  onclick="indicate(4)"></p>
+          </div>
+
+       
+
+
+    </section>
+
+
+
+
+
+
+
+
+
+     <script src="./index.js"></script>
+  </body>
+  </html>

@@ -1,0 +1,111 @@
+   
+
+   *{
+    padding:0px;
+    margin: 0px;
+    box-sizing: border-box;
+    }
+    .carousel{
+        height:500px;
+        width:100%;
+        background-color: red;
+        overflow: hidden;
+        position: relative;
+        display: flex;
+        align-items: center;
+        
+        
+    }
+    .slider{
+        height:500px;
+        /* width:500%; */
+        width:600% ;
+        background-color:yellow;
+        display: flex;
+        position: absolute;
+        margin-left: -100%;
+       }
+             /* hya carousel sathi marginleft -100% hi imp property aahe  */
+    .img{
+        height:500px;
+        /* width:20%; */
+        width:calc(100%/6);
+        background-color:green;
+        font-size:200px;
+        background-size: cover;
+    }
+    .img:nth-child(1){
+        background-image:url(https://img.freepik.com/free-photo/rows-beautiful-pink-flowers-trees_335224-855.jpg?w=2000)
+    }
+    .img:nth-child(2){
+        background-image:url(https://images.unsplash.com/photo-1603436262790-87a71fd759f9?ixlib=rb-4.0.3&ixid=MnwxMjA3fDB8MHxzZWFyY2h8OHx8Zmxvd2VyJTIwbGFuZHNjYXBlfGVufDB8fDB8fA%3D%3D&w=1000&q=80);
+   }
+    .img:nth-child(3){
+        background-image: url(https://thumbs.dreamstime.com/b/horizontal-photo-big-flowers-yellow-tulips-small-myosostis-mix-fringed-garden-bed-public-park-107756876.jpg);
+
+    }
+    .img:nth-child(4){
+        background-image:url(https://t3.ftcdn.net/jpg/05/03/39/64/360_F_503396464_9PYT8MYV8TgXajetQv6Nt6CizQkqup6b.jpg);
+   }
+   .img:nth-child(5){
+      background-image: url(https://img.freepik.com/free-photo/rows-beautiful-pink-flowers-trees_335224-855.jpg?w=2000);
+
+   }
+   .img:nth-child(6){
+    background-image:url(https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcRYhSRWZDSVKlIO_aky38bREfkIh134udeXxA&usqp=CAU);
+   }
+   .buttons{
+    height:60px;
+    width:100%;
+    /* background-color: red; */
+    position: absolute;
+    padding: 0px 30px;
+    display: flex;
+    justify-content: space-between;
+
+   }
+   .button{
+    height:60px;
+    width:60px;
+    background-color: yellow;
+    border-radius:50%;
+    font-size: 30px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    border-radius: 3px solid white;
+    color: white;
+    opacity: .5;
+    cursor: pointer;
+    transition: 0.4s;
+    
+   }
+   .button:hover{
+    opacity: 1;
+   }
+   .indicators{
+    height:50px;
+    width: 100%;
+    /* background-color:red ; */
+    position: absolute;
+    bottom: 0;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    column-gap: 15px;
+   }
+   .indicator{
+    height: 15px;
+    width: 15px;
+    /* background-color: white; */
+    background-color: yellow;
+    border-radius: 50%;
+    cursor: pointer;
+    transition: .3s;
+   }
+   .indicator:hover{
+    transform: scale(1.2);
+   }
+   .activeindicator{
+    background-color: red;
+   }
