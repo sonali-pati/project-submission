@@ -1,0 +1,48 @@
+  <!DOCTYPE html>
+  <html lang="en">
+  <head>
+
+    <title>Form Validation Two </title>
+    <link rel="stylesheet" href="./index.css">
+  </head>
+  <body>
+    <section class="validation_box">
+       <div class="container">
+        <div class="inp">
+         <input type="text" onkeyup="setupField(event,'name')"   placeholder="Enter name">
+         <div class="tooltip" id="name_err">
+           Some error
+         </div>
+        </div>
+        <div class="inp">
+          <input type="email" onkeyup="setupField(event,'email')"   placeholder="Enter email">
+          <div class="tooltip" id="email_err">
+            Some error
+          </div>
+        </div>
+         
+         <div class="inp">
+         <input type="password" onkeyup="setupField(event,'password')" placeholder="Enter password">
+          <div class="tooltip" id="password_err">
+           Some error
+         </div>
+        </div>
+         <button id="btn" disabled>Register</button>
+       </div>
+
+    </section>
+     
+
+
+
+
+
+
+
+
+
+
+
+        <script src="./index.js"></script>
+  </body>
+  </html>

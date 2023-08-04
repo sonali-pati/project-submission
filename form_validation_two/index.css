@@ -1,0 +1,76 @@
+  
+  *{
+    padding:0px;
+    margin:0px;
+    box-sizing:border-box;
+  }
+  .validation_box{
+    background-color: lightgrey;
+    height:600px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    
+
+  }
+  .container{
+    width: 40%;
+    padding: 30px 30px;
+    background-color: white;
+    row-gap: 20px;
+    display: flex;
+    flex-direction: column;
+    align-items: flex-start;
+    border-radius: 10px;
+  }
+  .inp{
+    width: 100%;
+    height: 40px;
+    /* background-color: red; */
+    position: relative;
+    display: flex;
+    align-items: center;
+  }
+  .tooltip{
+    width: 60%;
+    padding: 10px 10px;
+    /* background-color: blue; */
+    background-color: #e23949;
+    border-radius: 10px;
+    position: absolute;
+    right: -60%;
+    font-family: 'Segoe UI';
+    font-weight: bold;
+    color: white;
+    text-align: center;
+    display: flex;
+    align-items: center;
+  }
+  .tooltip::before{
+    content: "";
+    display: block;
+    width: 15px;
+    height: 15px;
+    /* background: yellow; */
+    background-color: #e23949;
+    position: absolute;
+    left: -10px;
+    transform: rotateZ(45deg);
+  }
+  input{
+    width:100%;
+    height: 40px;
+    text-indent: 10px;
+    border: 1px solid light gray;
+    border-radius: 10px;
+    outline: none;
+    position: absolute;
+  }
+  button{
+    padding: 10px 20px;
+    border-radius: 5px;
+    border: 1px solid gray;
+    cursor: pointer;
+    cursor: not-allowed;
+    text-transform: uppercase;
+  }
